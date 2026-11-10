@@ -3,10 +3,10 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width,initial-scale=1" />
-    <title>IQ Нальчик — скорочтение и развитие памяти для детей</title>
+    <title>IQ Нальчик — подготовка к школе для детей</title>
     <meta
       name="description"
-      content="Образовательный центр IQ в Нальчике: скорочтение, развитие памяти, подготовка к школе. Группы 3–4 ребёнка. Получите консультацию."
+      content="Образовательный центр IQ в Нальчике: подготовка к школе в группах до 3 детей. Первое пробное занятие бесплатно."
     />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -28,24 +28,23 @@
     <main>
       <div class="hero">
         <div class="wrap">
-          <div>
-            <span class="tag">Образовательный центр</span>
+          <div class="offer">
+            <span class="tag">Подготовка к школе</span>
             <h1>
-              Скорочтение и память для детей — <em>результат гарантируем</em>
+              Готов ли ваш ребёнок к школе?
+              <em>Подготовим с гарантией результата</em>
             </h1>
             <p class="lead">
-              Мини-группы по 3–4 ребёнка. Педагог и тьютор в каждой группе.
+              Занятия в группе до 3 детей. Педагог и тьютор следят, чтобы никто
+              не отстал.
             </p>
-            <ul class="chips">
-              <li><b>5–7 лет</b>подготовка к школе</li>
-              <li><b>от 7 лет</b>скорочтение и память</li>
-              <li><b>3–4 ребёнка</b>в группе</li>
-              <li><b>09:00–19:00</b>без выходных</li>
-            </ul>
           </div>
           <div class="card" id="form">
-            <h2>Получить консультацию</h2>
-            <p class="sub">Перезвоним за 5 минут и подберём направление</p>
+            <div class="timer">
+              Осталась <b id="timer">01:00</b> — успейте получить лучшее
+              предложение
+            </div>
+            <h2>Оставьте заявку за 1 минуту и получите пробное занятие бесплатно</h2>
             <form class="lead-form" novalidate>
               <input
                 type="text"
@@ -63,7 +62,7 @@
                 required
               />
               <div class="err">Проверьте имя и номер телефона</div>
-              <button class="btn" type="submit">Получить консультацию</button>
+              <button class="btn" type="submit">Записаться на пробное</button>
               <label class="agree"
                 ><input type="checkbox" checked required /> Согласен на
                 обработку персональных данных. Без спама.</label
@@ -73,52 +72,37 @@
         </div>
       </div>
 
-      <section>
-        <div class="wrap">
-          <h2 class="t">Направления и цены</h2>
-          <div class="prices">
-            <div class="g">Дошкольники · 5–7 лет</div>
-            <div class="r">
-              <span>Подготовка к школе + память<small>30 минут</small></span
-              ><b>5 200 ₽</b>
-            </div>
-            <div class="r">
-              <span>Подготовка к школе<small>1 час</small></span
-              ><b>6 800 ₽</b>
-            </div>
-            <div class="g">Школьники · от 7 лет</div>
-            <div class="r">
-              <span>Быстрочтение<small>40 минут</small></span
-              ><b>6 000 ₽</b>
-            </div>
-            <div class="r">
-              <span>Быстрочтение + память<small>1 ч 20 мин</small></span
-              ><b>7 200 ₽</b>
-            </div>
-            <div class="g">Подростки · от 14 лет (от 180 слов/мин)</div>
-            <div class="r">
-              <span>Развитие памяти<small>40 минут</small></span
-              ><b>6 000 ₽</b>
-            </div>
-            <div class="r">
-              <span>Скорочтение<small>1 ч 20 мин</small></span
-              ><b>7 200 ₽</b>
-            </div>
-          </div>
-          <p class="note">Цена за 8 занятий · 2 занятия в неделю</p>
-        </div>
-      </section>
-
       <div class="cta">
         <div class="wrap">
-          <h2>Не знаете, что выбрать?</h2>
-          <p>Подскажем на бесплатной консультации</p>
-          <a href="#form" class="btn">Получить консультацию</a>
+          <h2>Не знаете, подойдёт ли ваш ребёнок?</h2>
+          <p>Приходите на бесплатное пробное занятие</p>
+          <a href="#form" class="btn">Записаться на пробное</a>
         </div>
       </div>
     </main>
 
+    <div class="modal" id="popup" hidden>
+      <div class="modal-box card">
+        <button class="modal-x" type="button" aria-label="Закрыть">×</button>
+        <div class="timer">
+          Осталась <b class="timer-val">01:00</b> — лучшее предложение
+        </div>
+        <h2>Оставьте заявку за 1 минуту и получите пробное занятие бесплатно</h2>
+        <form class="lead-form" novalidate>
+          <input type="text" name="name" placeholder="Ваше имя" autocomplete="name" required />
+          <input type="tel" name="phone" placeholder="+7 (___) ___-__-__" autocomplete="tel" inputmode="tel" required />
+          <div class="err">Проверьте имя и номер телефона</div>
+          <button class="btn" type="submit">Записаться на пробное</button>
+          <label class="agree"
+            ><input type="checkbox" checked required /> Согласен на обработку
+            персональных данных. Без спама.</label
+          >
+        </form>
+      </div>
+    </div>
+
     <footer><div class="wrap">г. Нальчик, ул. Кирова, 49</div></footer>
     <script src="form.js"></script>
+    <script src="promo.js"></script>
   </body>
 </html>
