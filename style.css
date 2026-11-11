@@ -115,7 +115,7 @@ header img {
 /* hero */
 .hero {
   background:
-    linear-gradient(180deg, rgba(18, 37, 69, 0.35), rgba(18, 37, 69, 0.82)),
+    linear-gradient(180deg, rgba(8, 14, 30, 0.82), rgba(8, 14, 30, 0.94)),
     url(hero1.jpg) center 30% / cover;
   padding: 28px 0 30px;
   color: #fff;
@@ -132,11 +132,12 @@ header img {
   border: 1px solid #d3e0ea;
 }
 h1 {
-  font-size: 32px;
-  line-height: 1.12;
+  font-size: 40px;
+  line-height: 1.1;
   color: #fff;
   font-weight: 900;
   margin-bottom: 14px;
+  text-shadow: 0 2px 12px rgba(0, 0, 0, 0.6);
 }
 h1 em {
   display: block;
@@ -145,8 +146,9 @@ h1 em {
   margin-top: 6px;
 }
 .lead {
-  font-size: 17px;
+  font-size: 19px;
   margin-bottom: 18px;
+  text-shadow: 0 1px 8px rgba(0, 0, 0, 0.6);
 }
 .chips {
   display: grid;
@@ -389,10 +391,10 @@ footer {
     align-items: center;
   }
   h1 {
-    font-size: 46px;
+    font-size: 60px;
   }
   .lead {
-    font-size: 19px;
+    font-size: 22px;
   }
   .hero {
     padding: 60px 0;
